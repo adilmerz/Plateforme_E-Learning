@@ -1,0 +1,1199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F9BAB64-D248-484A-9BD9-8BFF95C39CA6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetFinFormationCoteWeb</RootNamespace>
+    <AssemblyName>ProjetFinFormationCoteWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.19.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.0.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Adil Dev\Documents\Visual Studio 2013\Projects\WebApplicationTpMVC_1\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Authauntification\Images\communication.png" />
+    <Content Include="Authauntification\Images\interface.png" />
+    <Content Include="demo2.html" />
+    <Content Include="Galerie\1.jpg" />
+    <Content Include="Galerie\2.jpg" />
+    <Content Include="Galerie\3.jpg" />
+    <Content Include="Galerie\4.jpg" />
+    <Content Include="Galerie\5.jpg" />
+    <Content Include="Galerie\6.jpg" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="MasterPages\img\interface.png" />
+    <Content Include="Pages\Actualités.aspx" />
+    <Content Include="Pages\Forum.aspx" />
+    <Content Include="Pages\Gérer_Utilisateurs.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="MasterPages\css\custom.css" />
+    <Content Include="MasterPages\css\fontastic.css" />
+    <Content Include="MasterPages\css\style.blue.css" />
+    <Content Include="MasterPages\css\style.default.css" />
+    <Content Include="MasterPages\css\style.green.css" />
+    <Content Include="MasterPages\css\style.pink.css" />
+    <Content Include="MasterPages\css\style.red.css" />
+    <Content Include="MasterPages\css\style.sea.css" />
+    <Content Include="MasterPages\css\style.violet.css" />
+    <Content Include="MasterPages\fonts\dashboard.svg" />
+    <Content Include="MasterPages\icons-reference\fonts\dashboard.svg" />
+    <Content Include="MasterPages\icons-reference\icons-reference.html" />
+    <Content Include="MasterPages\icons-reference\styles.css" />
+    <Content Include="MasterPages\img\brand\brand-1.svg" />
+    <Content Include="MasterPages\img\brand\brand-2.svg" />
+    <Content Include="MasterPages\img\brand\brand-3.svg" />
+    <Content Include="MasterPages\img\brand\brand-4.svg" />
+    <Content Include="MasterPages\img\brand\brand-5.svg" />
+    <Content Include="MasterPages\img\brand\brand-6.svg" />
+    <Content Include="MasterPages\img\favicon.ico" />
+    <Content Include="MasterPages\img\flags\16\AD.png" />
+    <Content Include="MasterPages\img\flags\16\AE.png" />
+    <Content Include="MasterPages\img\flags\16\AF.png" />
+    <Content Include="MasterPages\img\flags\16\AG.png" />
+    <Content Include="MasterPages\img\flags\16\AI.png" />
+    <Content Include="MasterPages\img\flags\16\AL.png" />
+    <Content Include="MasterPages\img\flags\16\AM.png" />
+    <Content Include="MasterPages\img\flags\16\AN.png" />
+    <Content Include="MasterPages\img\flags\16\AO.png" />
+    <Content Include="MasterPages\img\flags\16\AQ.png" />
+    <Content Include="MasterPages\img\flags\16\AR.png" />
+    <Content Include="MasterPages\img\flags\16\AS.png" />
+    <Content Include="MasterPages\img\flags\16\AT.png" />
+    <Content Include="MasterPages\img\flags\16\AU.png" />
+    <Content Include="MasterPages\img\flags\16\AW.png" />
+    <Content Include="MasterPages\img\flags\16\AX.png" />
+    <Content Include="MasterPages\img\flags\16\AZ.png" />
+    <Content Include="MasterPages\img\flags\16\BA.png" />
+    <Content Include="MasterPages\img\flags\16\BB.png" />
+    <Content Include="MasterPages\img\flags\16\BD.png" />
+    <Content Include="MasterPages\img\flags\16\BE.png" />
+    <Content Include="MasterPages\img\flags\16\BF.png" />
+    <Content Include="MasterPages\img\flags\16\BG.png" />
+    <Content Include="MasterPages\img\flags\16\BH.png" />
+    <Content Include="MasterPages\img\flags\16\BI.png" />
+    <Content Include="MasterPages\img\flags\16\BJ.png" />
+    <Content Include="MasterPages\img\flags\16\BL.png" />
+    <Content Include="MasterPages\img\flags\16\BM.png" />
+    <Content Include="MasterPages\img\flags\16\BN.png" />
+    <Content Include="MasterPages\img\flags\16\BO.png" />
+    <Content Include="MasterPages\img\flags\16\BR.png" />
+    <Content Include="MasterPages\img\flags\16\BS.png" />
+    <Content Include="MasterPages\img\flags\16\BT.png" />
+    <Content Include="MasterPages\img\flags\16\BW.png" />
+    <Content Include="MasterPages\img\flags\16\BY.png" />
+    <Content Include="MasterPages\img\flags\16\BZ.png" />
+    <Content Include="MasterPages\img\flags\16\CA.png" />
+    <Content Include="MasterPages\img\flags\16\CC.png" />
+    <Content Include="MasterPages\img\flags\16\CD.png" />
+    <Content Include="MasterPages\img\flags\16\CF.png" />
+    <Content Include="MasterPages\img\flags\16\CG.png" />
+    <Content Include="MasterPages\img\flags\16\CH.png" />
+    <Content Include="MasterPages\img\flags\16\CI.png" />
+    <Content Include="MasterPages\img\flags\16\CK.png" />
+    <Content Include="MasterPages\img\flags\16\CL.png" />
+    <Content Include="MasterPages\img\flags\16\CM.png" />
+    <Content Include="MasterPages\img\flags\16\CN.png" />
+    <Content Include="MasterPages\img\flags\16\CO.png" />
+    <Content Include="MasterPages\img\flags\16\CR.png" />
+    <Content Include="MasterPages\img\flags\16\CT.png" />
+    <Content Include="MasterPages\img\flags\16\CU.png" />
+    <Content Include="MasterPages\img\flags\16\CV.png" />
+    <Content Include="MasterPages\img\flags\16\CW.png" />
+    <Content Include="MasterPages\img\flags\16\CX.png" />
+    <Content Include="MasterPages\img\flags\16\CY.png" />
+    <Content Include="MasterPages\img\flags\16\CZ.png" />
+    <Content Include="MasterPages\img\flags\16\DE.png" />
+    <Content Include="MasterPages\img\flags\16\DJ.png" />
+    <Content Include="MasterPages\img\flags\16\DK.png" />
+    <Content Include="MasterPages\img\flags\16\DM.png" />
+    <Content Include="MasterPages\img\flags\16\DO.png" />
+    <Content Include="MasterPages\img\flags\16\DZ.png" />
+    <Content Include="MasterPages\img\flags\16\EC.png" />
+    <Content Include="MasterPages\img\flags\16\EE.png" />
+    <Content Include="MasterPages\img\flags\16\EG.png" />
+    <Content Include="MasterPages\img\flags\16\EH.png" />
+    <Content Include="MasterPages\img\flags\16\ER.png" />
+    <Content Include="MasterPages\img\flags\16\ES.png" />
+    <Content Include="MasterPages\img\flags\16\ET.png" />
+    <Content Include="MasterPages\img\flags\16\EU.png" />
+    <Content Include="MasterPages\img\flags\16\FI.png" />
+    <Content Include="MasterPages\img\flags\16\FJ.png" />
+    <Content Include="MasterPages\img\flags\16\FK.png" />
+    <Content Include="MasterPages\img\flags\16\FM.png" />
+    <Content Include="MasterPages\img\flags\16\FO.png" />
+    <Content Include="MasterPages\img\flags\16\FR.png" />
+    <Content Include="MasterPages\img\flags\16\GA.png" />
+    <Content Include="MasterPages\img\flags\16\GB.png" />
+    <Content Include="MasterPages\img\flags\16\GD.png" />
+    <Content Include="MasterPages\img\flags\16\GE.png" />
+    <Content Include="MasterPages\img\flags\16\GG.png" />
+    <Content Include="MasterPages\img\flags\16\GH.png" />
+    <Content Include="MasterPages\img\flags\16\GI.png" />
+    <Content Include="MasterPages\img\flags\16\GL.png" />
+    <Content Include="MasterPages\img\flags\16\GM.png" />
+    <Content Include="MasterPages\img\flags\16\GN.png" />
+    <Content Include="MasterPages\img\flags\16\GQ.png" />
+    <Content Include="MasterPages\img\flags\16\GR.png" />
+    <Content Include="MasterPages\img\flags\16\GS.png" />
+    <Content Include="MasterPages\img\flags\16\GT.png" />
+    <Content Include="MasterPages\img\flags\16\GU.png" />
+    <Content Include="MasterPages\img\flags\16\GW.png" />
+    <Content Include="MasterPages\img\flags\16\GY.png" />
+    <Content Include="MasterPages\img\flags\16\HK.png" />
+    <Content Include="MasterPages\img\flags\16\HN.png" />
+    <Content Include="MasterPages\img\flags\16\HR.png" />
+    <Content Include="MasterPages\img\flags\16\HT.png" />
+    <Content Include="MasterPages\img\flags\16\HU.png" />
+    <Content Include="MasterPages\img\flags\16\IC.png" />
+    <Content Include="MasterPages\img\flags\16\ID.png" />
+    <Content Include="MasterPages\img\flags\16\IE.png" />
+    <Content Include="MasterPages\img\flags\16\IL.png" />
+    <Content Include="MasterPages\img\flags\16\IM.png" />
+    <Content Include="MasterPages\img\flags\16\IN.png" />
+    <Content Include="MasterPages\img\flags\16\IQ.png" />
+    <Content Include="MasterPages\img\flags\16\IR.png" />
+    <Content Include="MasterPages\img\flags\16\IS.png" />
+    <Content Include="MasterPages\img\flags\16\IT.png" />
+    <Content Include="MasterPages\img\flags\16\JE.png" />
+    <Content Include="MasterPages\img\flags\16\JM.png" />
+    <Content Include="MasterPages\img\flags\16\JO.png" />
+    <Content Include="MasterPages\img\flags\16\JP.png" />
+    <Content Include="MasterPages\img\flags\16\KE.png" />
+    <Content Include="MasterPages\img\flags\16\KG.png" />
+    <Content Include="MasterPages\img\flags\16\KH.png" />
+    <Content Include="MasterPages\img\flags\16\KI.png" />
+    <Content Include="MasterPages\img\flags\16\KM.png" />
+    <Content Include="MasterPages\img\flags\16\KN.png" />
+    <Content Include="MasterPages\img\flags\16\KP.png" />
+    <Content Include="MasterPages\img\flags\16\KR.png" />
+    <Content Include="MasterPages\img\flags\16\KW.png" />
+    <Content Include="MasterPages\img\flags\16\KY.png" />
+    <Content Include="MasterPages\img\flags\16\KZ.png" />
+    <Content Include="MasterPages\img\flags\16\LA.png" />
+    <Content Include="MasterPages\img\flags\16\LB.png" />
+    <Content Include="MasterPages\img\flags\16\LC.png" />
+    <Content Include="MasterPages\img\flags\16\LI.png" />
+    <Content Include="MasterPages\img\flags\16\LK.png" />
+    <Content Include="MasterPages\img\flags\16\LR.png" />
+    <Content Include="MasterPages\img\flags\16\LS.png" />
+    <Content Include="MasterPages\img\flags\16\LT.png" />
+    <Content Include="MasterPages\img\flags\16\LU.png" />
+    <Content Include="MasterPages\img\flags\16\LV.png" />
+    <Content Include="MasterPages\img\flags\16\LY.png" />
+    <Content Include="MasterPages\img\flags\16\MA.png" />
+    <Content Include="MasterPages\img\flags\16\MC.png" />
+    <Content Include="MasterPages\img\flags\16\MD.png" />
+    <Content Include="MasterPages\img\flags\16\ME.png" />
+    <Content Include="MasterPages\img\flags\16\MF.png" />
+    <Content Include="MasterPages\img\flags\16\MG.png" />
+    <Content Include="MasterPages\img\flags\16\MH.png" />
+    <Content Include="MasterPages\img\flags\16\MK.png" />
+    <Content Include="MasterPages\img\flags\16\ML.png" />
+    <Content Include="MasterPages\img\flags\16\MM.png" />
+    <Content Include="MasterPages\img\flags\16\MN.png" />
+    <Content Include="MasterPages\img\flags\16\MO.png" />
+    <Content Include="MasterPages\img\flags\16\MP.png" />
+    <Content Include="MasterPages\img\flags\16\MQ.png" />
+    <Content Include="MasterPages\img\flags\16\MR.png" />
+    <Content Include="MasterPages\img\flags\16\MS.png" />
+    <Content Include="MasterPages\img\flags\16\MT.png" />
+    <Content Include="MasterPages\img\flags\16\MU.png" />
+    <Content Include="MasterPages\img\flags\16\MV.png" />
+    <Content Include="MasterPages\img\flags\16\MW.png" />
+    <Content Include="MasterPages\img\flags\16\MX.png" />
+    <Content Include="MasterPages\img\flags\16\MY.png" />
+    <Content Include="MasterPages\img\flags\16\MZ.png" />
+    <Content Include="MasterPages\img\flags\16\NA.png" />
+    <Content Include="MasterPages\img\flags\16\NC.png" />
+    <Content Include="MasterPages\img\flags\16\NE.png" />
+    <Content Include="MasterPages\img\flags\16\NF.png" />
+    <Content Include="MasterPages\img\flags\16\NG.png" />
+    <Content Include="MasterPages\img\flags\16\NI.png" />
+    <Content Include="MasterPages\img\flags\16\NL.png" />
+    <Content Include="MasterPages\img\flags\16\NO.png" />
+    <Content Include="MasterPages\img\flags\16\NP.png" />
+    <Content Include="MasterPages\img\flags\16\NR.png" />
+    <Content Include="MasterPages\img\flags\16\NU.png" />
+    <Content Include="MasterPages\img\flags\16\NZ.png" />
+    <Content Include="MasterPages\img\flags\16\OM.png" />
+    <Content Include="MasterPages\img\flags\16\PA.png" />
+    <Content Include="MasterPages\img\flags\16\PE.png" />
+    <Content Include="MasterPages\img\flags\16\PF.png" />
+    <Content Include="MasterPages\img\flags\16\PG.png" />
+    <Content Include="MasterPages\img\flags\16\PH.png" />
+    <Content Include="MasterPages\img\flags\16\PK.png" />
+    <Content Include="MasterPages\img\flags\16\PL.png" />
+    <Content Include="MasterPages\img\flags\16\PN.png" />
+    <Content Include="MasterPages\img\flags\16\PR.png" />
+    <Content Include="MasterPages\img\flags\16\PS.png" />
+    <Content Include="MasterPages\img\flags\16\PT.png" />
+    <Content Include="MasterPages\img\flags\16\PW.png" />
+    <Content Include="MasterPages\img\flags\16\PY.png" />
+    <Content Include="MasterPages\img\flags\16\QA.png" />
+    <Content Include="MasterPages\img\flags\16\RE.png" />
+    <Content Include="MasterPages\img\flags\16\RO.png" />
+    <Content Include="MasterPages\img\flags\16\RS.png" />
+    <Content Include="MasterPages\img\flags\16\RU.png" />
+    <Content Include="MasterPages\img\flags\16\RW.png" />
+    <Content Include="MasterPages\img\flags\16\SA.png" />
+    <Content Include="MasterPages\img\flags\16\SB.png" />
+    <Content Include="MasterPages\img\flags\16\SC.png" />
+    <Content Include="MasterPages\img\flags\16\SD.png" />
+    <Content Include="MasterPages\img\flags\16\SE.png" />
+    <Content Include="MasterPages\img\flags\16\SG.png" />
+    <Content Include="MasterPages\img\flags\16\SH.png" />
+    <Content Include="MasterPages\img\flags\16\SI.png" />
+    <Content Include="MasterPages\img\flags\16\SK.png" />
+    <Content Include="MasterPages\img\flags\16\SL.png" />
+    <Content Include="MasterPages\img\flags\16\SM.png" />
+    <Content Include="MasterPages\img\flags\16\SN.png" />
+    <Content Include="MasterPages\img\flags\16\SO.png" />
+    <Content Include="MasterPages\img\flags\16\SR.png" />
+    <Content Include="MasterPages\img\flags\16\SS.png" />
+    <Content Include="MasterPages\img\flags\16\ST.png" />
+    <Content Include="MasterPages\img\flags\16\SV.png" />
+    <Content Include="MasterPages\img\flags\16\SX.png" />
+    <Content Include="MasterPages\img\flags\16\SY.png" />
+    <Content Include="MasterPages\img\flags\16\SZ.png" />
+    <Content Include="MasterPages\img\flags\16\TC.png" />
+    <Content Include="MasterPages\img\flags\16\TD.png" />
+    <Content Include="MasterPages\img\flags\16\TF.png" />
+    <Content Include="MasterPages\img\flags\16\TG.png" />
+    <Content Include="MasterPages\img\flags\16\TH.png" />
+    <Content Include="MasterPages\img\flags\16\TJ.png" />
+    <Content Include="MasterPages\img\flags\16\TK.png" />
+    <Content Include="MasterPages\img\flags\16\TL.png" />
+    <Content Include="MasterPages\img\flags\16\TM.png" />
+    <Content Include="MasterPages\img\flags\16\TN.png" />
+    <Content Include="MasterPages\img\flags\16\TO.png" />
+    <Content Include="MasterPages\img\flags\16\TR.png" />
+    <Content Include="MasterPages\img\flags\16\TT.png" />
+    <Content Include="MasterPages\img\flags\16\TV.png" />
+    <Content Include="MasterPages\img\flags\16\TW.png" />
+    <Content Include="MasterPages\img\flags\16\TZ.png" />
+    <Content Include="MasterPages\img\flags\16\UA.png" />
+    <Content Include="MasterPages\img\flags\16\UG.png" />
+    <Content Include="MasterPages\img\flags\16\US.png" />
+    <Content Include="MasterPages\img\flags\16\UY.png" />
+    <Content Include="MasterPages\img\flags\16\UZ.png" />
+    <Content Include="MasterPages\img\flags\16\VA.png" />
+    <Content Include="MasterPages\img\flags\16\VC.png" />
+    <Content Include="MasterPages\img\flags\16\VE.png" />
+    <Content Include="MasterPages\img\flags\16\VG.png" />
+    <Content Include="MasterPages\img\flags\16\VI.png" />
+    <Content Include="MasterPages\img\flags\16\VN.png" />
+    <Content Include="MasterPages\img\flags\16\VU.png" />
+    <Content Include="MasterPages\img\flags\16\WF.png" />
+    <Content Include="MasterPages\img\flags\16\WS.png" />
+    <Content Include="MasterPages\img\flags\16\YE.png" />
+    <Content Include="MasterPages\img\flags\16\YT.png" />
+    <Content Include="MasterPages\img\flags\16\ZA.png" />
+    <Content Include="MasterPages\img\flags\16\ZM.png" />
+    <Content Include="MasterPages\img\flags\16\ZW.png" />
+    <Content Include="MasterPages\img\flags\16\_abkhazia.png" />
+    <Content Include="MasterPages\img\flags\16\_basque-country.png" />
+    <Content Include="MasterPages\img\flags\16\_british-antarctic-territory.png" />
+    <Content Include="MasterPages\img\flags\16\_commonwealth.png" />
+    <Content Include="MasterPages\img\flags\16\_england.png" />
+    <Content Include="MasterPages\img\flags\16\_gosquared.png" />
+    <Content Include="MasterPages\img\flags\16\_kosovo.png" />
+    <Content Include="MasterPages\img\flags\16\_mars.png" />
+    <Content Include="MasterPages\img\flags\16\_nagorno-karabakh.png" />
+    <Content Include="MasterPages\img\flags\16\_nato.png" />
+    <Content Include="MasterPages\img\flags\16\_northern-cyprus.png" />
+    <Content Include="MasterPages\img\flags\16\_olympics.png" />
+    <Content Include="MasterPages\img\flags\16\_red-cross.png" />
+    <Content Include="MasterPages\img\flags\16\_scotland.png" />
+    <Content Include="MasterPages\img\flags\16\_somaliland.png" />
+    <Content Include="MasterPages\img\flags\16\_south-ossetia.png" />
+    <Content Include="MasterPages\img\flags\16\_united-nations.png" />
+    <Content Include="MasterPages\img\flags\16\_unknown.png" />
+    <Content Include="MasterPages\img\flags\16\_wales.png" />
+    <Content Include="MasterPages\img\man.png" />
+    <Content Include="MasterPages\img\photos\paul-morris-116514-unsplash.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1430931071372-38127bd472b8.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1436018626274-89acd1d6ec9d.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1466978913421-dad2ebd01d17.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1477763858572-cda7deaa9bc5.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1504087697492-238a6bf49ce8.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1505275350441-83dcda8eeef5.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1508766917616-d22f3f1eea14.jpg" />
+    <Content Include="MasterPages\img\photos\restaurant-1515164783716-8e6920f3e77c.jpg" />
+    <Content Include="MasterPages\img\photos\victor-ene-1301123-unsplash.jpg" />
+    <Content Include="MasterPages\index.html" />
+    <Content Include="MasterPages\js\charts-custom.js" />
+    <Content Include="MasterPages\js\charts-home.js" />
+    <Content Include="MasterPages\js\front.js" />
+    <Content Include="MasterPages\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="MasterPages\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="MasterPages\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="MasterPages\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="MasterPages\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="MasterPages\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="MasterPages\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="MasterPages\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="MasterPages\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="MasterPages\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="MasterPages\vendor\chart.js\Chart.bundle.js" />
+    <Content Include="MasterPages\vendor\chart.js\Chart.bundle.min.js" />
+    <Content Include="MasterPages\vendor\chart.js\Chart.css" />
+    <Content Include="MasterPages\vendor\chart.js\Chart.js" />
+    <Content Include="MasterPages\vendor\chart.js\Chart.min.css" />
+    <Content Include="MasterPages\vendor\chart.js\Chart.min.js" />
+    <Content Include="MasterPages\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="MasterPages\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="MasterPages\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="MasterPages\vendor\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="MasterPages\vendor\jquery-validation\additional-methods.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\additional-methods.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\jquery.validate.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\jquery.validate.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ar.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ar.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_az.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_az.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_bg.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_bg.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_bn_BD.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_bn_BD.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ca.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ca.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_cs.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_cs.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_da.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_da.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_de.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_de.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_el.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_el.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_es.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_es.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_es_AR.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_es_AR.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_es_PE.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_es_PE.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_et.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_et.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_eu.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_eu.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_fa.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_fa.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_fi.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_fi.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_fr.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_fr.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ge.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ge.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_gl.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_gl.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_he.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_he.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_hr.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_hr.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_hu.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_hu.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_hy_AM.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_hy_AM.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_id.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_id.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_is.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_is.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_it.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_it.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ja.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ja.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ka.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ka.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_kk.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_kk.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ko.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ko.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_lt.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_lt.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_lv.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_lv.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_mk.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_mk.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_my.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_my.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_nl.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_nl.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_no.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_no.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_pl.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_pl.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_pt_BR.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_pt_BR.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_pt_PT.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_pt_PT.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ro.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ro.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ru.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ru.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sd.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sd.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_si.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_si.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sk.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sk.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sl.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sl.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sr.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sr.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sr_lat.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sr_lat.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sv.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_sv.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_th.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_th.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_tj.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_tj.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_tr.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_tr.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_uk.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_uk.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ur.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_ur.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_vi.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_vi.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_zh.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_zh.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_zh_TW.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\messages_zh_TW.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_de.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_de.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_es_CL.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_es_CL.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_fi.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_fi.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_it.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_it.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_nl.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_nl.min.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_pt.js" />
+    <Content Include="MasterPages\vendor\jquery-validation\localization\methods_pt.min.js" />
+    <Content Include="MasterPages\vendor\jquery.cookie\jquery.cookie.js" />
+    <Content Include="MasterPages\vendor\jquery.cookie\MIT-LICENSE.txt" />
+    <Content Include="MasterPages\vendor\jquery\core.js" />
+    <Content Include="MasterPages\vendor\jquery\jquery.js" />
+    <Content Include="MasterPages\vendor\jquery\jquery.min.js" />
+    <Content Include="MasterPages\vendor\jquery\jquery.slim.js" />
+    <Content Include="MasterPages\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="MasterPages\vendor\popper.js\esm\popper-utils.js" />
+    <Content Include="MasterPages\vendor\popper.js\esm\popper-utils.min.js" />
+    <Content Include="MasterPages\vendor\popper.js\esm\popper.js" />
+    <Content Include="MasterPages\vendor\popper.js\esm\popper.min.js" />
+    <Content Include="MasterPages\vendor\popper.js\popper-utils.js" />
+    <Content Include="MasterPages\vendor\popper.js\popper-utils.min.js" />
+    <Content Include="MasterPages\vendor\popper.js\popper.js" />
+    <Content Include="MasterPages\vendor\popper.js\popper.min.js" />
+    <Content Include="MasterPages\vendor\popper.js\umd\popper-utils.js" />
+    <Content Include="MasterPages\vendor\popper.js\umd\popper-utils.min.js" />
+    <Content Include="MasterPages\vendor\popper.js\umd\popper.js" />
+    <Content Include="MasterPages\vendor\popper.js\umd\popper.min.js" />
+    <Content Include="Authauntification\css\main.css" />
+    <Content Include="Authauntification\css\util.css" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Authauntification\fonts\montserrat\OFL.txt" />
+    <Content Include="Authauntification\Images\icons\favicon.ico" />
+    <Content Include="Authauntification\Images\logo.png" />
+    <Content Include="Authauntification\Images\man.png" />
+    <Content Include="Authauntification\Images\man_add.png" />
+    <Content Include="Authauntification\Images\man_rest.png" />
+    <Content Include="icon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Authauntification\js\main.js" />
+    <Content Include="Authauntification\Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Authauntification\Register.aspx" />
+    <Content Include="Authauntification\Restore.aspx" />
+    <Content Include="Authauntification\Scripts\bootstrap.bundle.js" />
+    <Content Include="Authauntification\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Authauntification\Scripts\bootstrap.js" />
+    <Content Include="Authauntification\Scripts\bootstrap.min.js" />
+    <Content Include="Authauntification\Scripts\esm\popper-utils.js" />
+    <Content Include="Authauntification\Scripts\esm\popper-utils.min.js" />
+    <Content Include="Authauntification\Scripts\esm\popper.js" />
+    <Content Include="Authauntification\Scripts\esm\popper.min.js" />
+    <Content Include="Authauntification\Scripts\index.d.ts" />
+    <Content Include="Authauntification\Scripts\index.js.flow" />
+    <Content Include="Authauntification\Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Authauntification\Scripts\esm\popper-utils.js.map" />
+    <Content Include="Authauntification\Scripts\esm\popper.min.js.map" />
+    <Content Include="Authauntification\Scripts\esm\popper.js.map" />
+    <Content Include="Authauntification\Scripts\bootstrap.min.js.map" />
+    <Content Include="Authauntification\Scripts\bootstrap.js.map" />
+    <Content Include="Authauntification\Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Authauntification\Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="Authauntification\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="Authauntification\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="Authauntification\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="MasterPages\Admin.Master" />
+    <Content Include="MasterPages\data\addresses.json" />
+    <Content Include="MasterPages\data\countries.json" />
+    <Content Include="MasterPages\data\restaurants-geojson.json" />
+    <Content Include="MasterPages\fonts\dashboard.eot" />
+    <Content Include="MasterPages\fonts\dashboard.ttf" />
+    <Content Include="MasterPages\fonts\dashboard.woff" />
+    <Content Include="MasterPages\icons-reference\fonts\dashboard.eot" />
+    <Content Include="MasterPages\icons-reference\fonts\dashboard.ttf" />
+    <Content Include="MasterPages\icons-reference\fonts\dashboard.woff" />
+    <Content Include="MasterPages\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="MasterPages\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="MasterPages\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="MasterPages\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="MasterPages\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="MasterPages\vendor\jquery.cookie\component.json" />
+    <Content Include="MasterPages\vendor\jquery.cookie\cookie.jquery.json" />
+    <Content Include="MasterPages\vendor\popper.js\umd\popper.js.flow" />
+    <None Include="Authauntification\Scripts\jquery-3.0.0.intellisense.js" />
+    <Content Include="Authauntification\Scripts\jquery-3.0.0.js" />
+    <Content Include="Authauntification\Scripts\jquery-3.0.0.min.js" />
+    <Content Include="Authauntification\Scripts\jquery-3.0.0.slim.js" />
+    <Content Include="Authauntification\Scripts\jquery-3.0.0.slim.min.js" />
+    <Content Include="Authauntification\Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Authauntification\Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Authauntification\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Authauntification\Scripts\popper-utils.js" />
+    <Content Include="Authauntification\Scripts\popper-utils.min.js" />
+    <Content Include="Authauntification\Scripts\popper.js" />
+    <Content Include="Authauntification\Scripts\popper.min.js" />
+    <Content Include="Authauntification\Scripts\src\index.js" />
+    <Content Include="Authauntification\Scripts\src\methods\defaults.js" />
+    <Content Include="Authauntification\Scripts\src\methods\destroy.js" />
+    <Content Include="Authauntification\Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Authauntification\Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Authauntification\Scripts\src\methods\placements.js" />
+    <Content Include="Authauntification\Scripts\src\methods\update.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\arrow.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\flip.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\hide.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\index.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\inner.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\offset.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Authauntification\Scripts\src\modifiers\shift.js" />
+    <Content Include="Authauntification\Scripts\src\utils\clockwise.js" />
+    <Content Include="Authauntification\Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Authauntification\Scripts\src\utils\debounce.js" />
+    <Content Include="Authauntification\Scripts\src\utils\find.js" />
+    <Content Include="Authauntification\Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Authauntification\Scripts\src\utils\findIndex.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getClientRect.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getParentNode.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getRoot.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getScroll.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getWindow.js" />
+    <Content Include="Authauntification\Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Authauntification\Scripts\src\utils\includeScroll.js" />
+    <Content Include="Authauntification\Scripts\src\utils\index.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isBrowser.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isFixed.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isFunction.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isIE.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isNumeric.js" />
+    <Content Include="Authauntification\Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Authauntification\Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Authauntification\Scripts\src\utils\runModifiers.js" />
+    <Content Include="Authauntification\Scripts\src\utils\setAttributes.js" />
+    <Content Include="Authauntification\Scripts\src\utils\setStyles.js" />
+    <Content Include="Authauntification\Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Authauntification\Scripts\umd\popper-utils.js" />
+    <Content Include="Authauntification\Scripts\umd\popper-utils.min.js" />
+    <Content Include="Authauntification\Scripts\umd\popper.js" />
+    <Content Include="Authauntification\Scripts\umd\popper.min.js" />
+    <Content Include="Authauntification\Scripts\WebForms\DetailsView.js" />
+    <Content Include="Authauntification\Scripts\WebForms\Focus.js" />
+    <Content Include="Authauntification\Scripts\WebForms\GridView.js" />
+    <Content Include="Authauntification\Scripts\WebForms\Menu.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Authauntification\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Authauntification\Scripts\WebForms\SmartNav.js" />
+    <Content Include="Authauntification\Scripts\WebForms\TreeView.js" />
+    <Content Include="Authauntification\Scripts\WebForms\WebForms.js" />
+    <Content Include="Authauntification\Scripts\WebForms\WebParts.js" />
+    <Content Include="Authauntification\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Authauntification\vendor\animate\animate.css" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Authauntification\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Authauntification\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Authauntification\vendor\bootstrap\js\popper.js" />
+    <Content Include="Authauntification\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Authauntification\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Authauntification\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="Authauntification\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Authauntification\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Authauntification\vendor\select2\select2.css" />
+    <Content Include="Authauntification\vendor\select2\select2.js" />
+    <Content Include="Authauntification\vendor\select2\select2.min.css" />
+    <Content Include="Authauntification\vendor\select2\select2.min.js" />
+    <Content Include="Authauntification\vendor\tilt\tilt.jquery.min.js" />
+    <Content Include="Pages\Modifier_Galerie.aspx" />
+    <Content Include="Pages\Rédiger_Actualité.aspx" />
+    <Content Include="Pages\TDI.aspx" />
+    <Content Include="Pages\Cours.aspx" />
+    <Content Include="Pages\TDM.aspx" />
+    <Content Include="Pages\TRI.aspx" />
+    <Content Include="photoActualité\1.png" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="slideRef\thumbnail-slider.css" />
+    <Content Include="slideRef\thumbnail-slider.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Authauntification\Scripts\jquery-3.0.0.slim.min.map" />
+    <Content Include="Authauntification\Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Authauntification\Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Authauntification\Scripts\umd\popper-utils.js.map" />
+    <Content Include="Authauntification\Scripts\umd\popper.min.js.map" />
+    <Content Include="Authauntification\Scripts\umd\popper.js.map" />
+    <Content Include="Authauntification\Scripts\umd\popper.js.flow" />
+    <Content Include="Authauntification\Scripts\README.md" />
+    <Content Include="Authauntification\Scripts\popper-utils.min.js.map" />
+    <Content Include="Authauntification\Scripts\popper-utils.js.map" />
+    <Content Include="Authauntification\Scripts\popper.min.js.map" />
+    <Content Include="Authauntification\Scripts\popper.js.map" />
+    <None Include="Authauntification\Scripts\_references.js" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Authauntification\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\Actualités.aspx.cs">
+      <DependentUpon>Actualités.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Actualités.aspx.designer.cs">
+      <DependentUpon>Actualités.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Forum.aspx.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Forum.aspx.designer.cs">
+      <DependentUpon>Forum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Gérer_Utilisateurs.aspx.cs">
+      <DependentUpon>Gérer_Utilisateurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Gérer_Utilisateurs.aspx.designer.cs">
+      <DependentUpon>Gérer_Utilisateurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Authauntification\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authauntification\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Modifier_Galerie.aspx.cs">
+      <DependentUpon>Modifier_Galerie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Modifier_Galerie.aspx.designer.cs">
+      <DependentUpon>Modifier_Galerie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rédiger_Actualité.aspx.cs">
+      <DependentUpon>Rédiger_Actualité.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Rédiger_Actualité.aspx.designer.cs">
+      <DependentUpon>Rédiger_Actualité.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TDI.aspx.cs">
+      <DependentUpon>TDI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TDI.aspx.designer.cs">
+      <DependentUpon>TDI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cours.aspx.cs">
+      <DependentUpon>Cours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cours.aspx.designer.cs">
+      <DependentUpon>Cours.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TDM.aspx.cs">
+      <DependentUpon>TDM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TDM.aspx.designer.cs">
+      <DependentUpon>TDM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TRI.aspx.cs">
+      <DependentUpon>TRI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TRI.aspx.designer.cs">
+      <DependentUpon>TRI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Authauntification\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authauntification\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authauntification\Restore.aspx.cs">
+      <DependentUpon>Restore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authauntification\Restore.aspx.designer.cs">
+      <DependentUpon>Restore.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="MasterPages\vendor\font-awesome\less\" />
+    <Folder Include="MasterPages\vendor\font-awesome\scss\" />
+    <Folder Include="Pages\TDM\" />
+    <Folder Include="Pages\TRI\" />
+    <Folder Include="Pages\TSDI\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>47916</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:47916/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

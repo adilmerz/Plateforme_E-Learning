@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ProjetFinFormationCoteWeb.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head  runat="server" >
+     <meta charset="utf-8"/>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Plateforme E-Learning</title>
+     
+     <%--     <%: Scripts.Render("~/bundles/modernizr") %>
+         <%: Styles.Render("~/Content/css") %>
+         <%: Scripts.Render("~/bundles/jquery") %>
+         <%: Scripts.Render("~/bundles/jqueryval") %>
+         <%: Scripts.Render("~/bundles/bootstrap") %>--%>
+      <%: Scripts.Render("~/bundles/jquery") %>
+     <%: Scripts.Render("~/bundles/bootstrap") %>
+     <%: Styles.Render("~/bundles/MasterPage") %>
+     <%: Scripts.Render("~/bundles/Mspages") %>
+
+  
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <webopt:BundleReference runat="server" Path="~/MasterPages/css"  />
+    
+     <meta name="description" content=""/>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+     <meta name="robots" content="all,follow"/>
+    <!-- Bootstrap CSS-->
+     <link rel="stylesheet" href="~/MasterPages/vendor/bootstrap/css/bootstrap.min.css" runat="server"/>
+    <!-- Font Awesome CSS-->
+     <link rel="stylesheet" href="~/MasterPages/vendor/font-awesome/css/font-awesome.min.css" runat="server"/>
+    <!-- Fontastic Custom icon font-->
+     <link rel="stylesheet" href="~/MasterPages/css/fontastic.css" runat="server"/>
+    <!-- Google fonts - Poppins -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700"/>
+    <!-- theme stylesheet-->
+     <link rel="stylesheet" href="~/MasterPages/css/style.blue.css"   />
+    <!-- Custom stylesheet - for your changes-->
+     <link rel="stylesheet" href="~/MasterPages/css/custom.css" />
+    <!-- Favicon-->
+     <link rel="shortcut icon" href="~/icon.ico" />
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  
+    
+  </head>
+  <body>
+     
+         
+    <div class="page">
+      <!-- Main Navbar-->
+      <header class="header">
+        <nav class="navbar ">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="#" class="navbar-brand d-none d-sm-inline-block">
+                  <div class="brand-text d-none d-lg-inline-block"><span>Plateforme </span><strong> E-Learning</strong></div>
+                  <div class="brand-text d-none d-sm-inline-block d-lg-none"><strong>BD</strong></div></a>
+                <!-- Toggle Button-->
+                  <a id="toggle-btn" href="#" class="menu-btn active"><i class="fa fa-exchange"></i></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+               
+                <!-- Logout    -->
+                <li class="nav-item"><a href="..\Authauntification\Login.aspx" class="nav-link logout"> <span class="d-none d-sm-inline">Logout</span><i class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="page-content d-flex align-items-stretch"> 
+        <!-- Side Navbar -->
+        <nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+              <div class="avatar">
+     <asp:Image ID="Image1" runat="server" CssClass="img-fluid rounded-circle" ImageUrl="~/MasterPages/img/man.png" /></div>
+            <div class="title">
+                
+              <h1 class="h4">ALAMI Ahmed</h1>
+              <p>Administrateur</p>
+            </div>
+          </div>
+            
+          <!-- Sidebar Navidation Menus--><span class="heading">Menu Principale</span>
+            
+            <hr/>
+          <ul class="list-unstyled" id="menu-items"  >
+            <li class="" onclick="" ><a href="Home.aspx"> <i class="icon-home"></i>Home </a></li>
+            <li class="">
+             <ul class="list-unstyled "><a id="list" > <i class="fa fa-th-list"></i>Catégories de Filières</a>
+                 <a id="list2" class="pr-2"><i class="fa fa-th-list"></i>Catégories de Filières <i class="fa fa-unsorted"></i></a>
+            <li class="item-list"  >
+             <a href="TDI.aspx"> <i class="fa fa-code"></i>Développement Informatiques</a>
+            </li>
+             <li class="item-list">
+             <a href="TRI.aspx"> <i class="fa fa-server"></i> Réseaux Informatiques</a>
+            </li>
+             <li class="item-list">
+             <a href="TDM.aspx"> <i class="fa fa-paint-brush"></i>Développement Multimédia</a>
+            </li>
+             </ul>
+            </li>
+            <li class=""> <a href="Actualités.aspx"> <i class="fa fa-newspaper-o"></i>Actualités</a></li>
+            <li class=""><a href="Forum.aspx"> <i class="fa fa-comments"></i>Forum </a></li>
+            </ul>
+            
+              <hr/>
+            
+          <span class="heading">Menu Gestion</span>
+            <hr/>
+          <ul class="list-unstyled">
+            <li class=""> <a href="../Pages/Gérer_Utilisateurs.aspx"> <i class="fa fa-users"></i>Gérer Utilisateurs</a></li>
+            
+            <li class=""> <a href="../Pages/Modifier_Galerie.aspx"> <i class="fa fa-image"></i>Modifier Galerie</a></li>
+            
+              <li class=""> <a href="../Pages/Rédiger_Actualité.aspx"> <i class="fa fa-edit"></i>Rédiger Actualité</a></li>
+          </ul>
+        </nav>
+        <div class="content-inner">
+          <!-- Page Header-->
+          <header class="page-header">
+            <div class="container-fluid">
+                
+              <h2 class="no-margin-bottom text-blue"><%=pageName %></h2>
+                    
+            </div>
+          </header>
+    
+    <section class="dashboard-counts no-padding-bottom">
+            <div class="container-fluid">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </section>
+    
+<!-- Page Footer-->
+          <footer class="main-footer">
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm-4 ">
+                  <p>Encadré Par : Abdelmounim Bendaoud</p>
+                </div>
+
+                <div class="col-sm-4 ">
+                  <p>Projet Fin Formation &copy; 2019-2020</p>
+                </div>
+                 
+                <div class="col-sm-4 text-right">
+                  <p>Désigner par : <a href="https://github.com/AdilELMERZOUGUI/AdilDev" class="external"> ELMERZOUGUI Adil</a></p>
+       
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="js/charts-home.js" ></script>
+    <!-- Main File-->
+    <script src="js/front.js" ></script>
+      
+   
+  </body>
+</html>

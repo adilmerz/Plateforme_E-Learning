@@ -1,0 +1,75 @@
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\ProjetFinFormationCoteWeb.dll.config
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\ProjetFinFormationCoteWeb.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\ProjetFinFormationCoteWeb.pdb
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Antlr3.Runtime.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.Core.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\EntityFramework.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Optimization.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Providers.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\WebGrease.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\EntityFramework.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.Core.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\obj\Debug\ProjetFinFormationCoteWeb.csprojResolveAssemblyReference.cache
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\obj\Debug\ProjetFinFormationCoteWeb.dll
+C:\Users\Adil Dev\documents\visual studio 2013\Projects\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\obj\Debug\ProjetFinFormationCoteWeb.pdb
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\ProjetFinFormationCoteWeb.dll.config
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\ProjetFinFormationCoteWeb.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\ProjetFinFormationCoteWeb.pdb
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\AjaxControlToolkit.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Antlr3.Runtime.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\AspNet.ScriptManager.jQuery.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.AspNet.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.Core.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\EntityFramework.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.ScriptManager.WebForms.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Mvc.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Optimization.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Providers.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\WebGrease.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Mvc.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\EntityFramework.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.Core.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\DotNetOpenAuth.AspNet.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.Membership.OpenAuth.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\obj\Debug\ProjetFinFormationCoteWeb.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\obj\Debug\ProjetFinFormationCoteWeb.pdb
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Newtonsoft.Json.dll
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Antlr3.Runtime.pdb
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\Newtonsoft.Json.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\bin\System.Web.Optimization.xml
+E:\TDI202\Projets\Plateforme(version_WebForms)\ProjetFinFormationCoteWeb\obj\Debug\ProjetFinFormationCoteWeb.csprojResolveAssemblyReference.cache
